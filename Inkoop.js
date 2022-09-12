@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="num" value="0">
+
+
+
+<button onclick="myFunction()">Check</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("num").value;
+  if(x<0)
+  {
+  document.getElementById("demo").innerHTML = "enter a positive value ";
+  }
+  else if(x%2==0)
+  {
+  var x1=parseInt(x)+2;
+  var x2=parseInt(x)+4;
+  var x3=parseInt(x)+6;
+   document.getElementById("demo").innerHTML = x1+","+x2+","+x3;
+  }
+  else{
+   var x1=parseInt(x)+2;
+  var x2=parseInt(x)+4;
+  var x3=parseInt(x)+6;
+  document.getElementById("demo").innerHTML = x1+","+x2+","+x3;
+  }
+  
+}
+</script>
+
+</body>
+</html>
